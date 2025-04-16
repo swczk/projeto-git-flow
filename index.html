@@ -2,107 +2,107 @@
 <html lang="pt-BR">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Boas Práticas para Repositórios Git</title>
-   <link rel="stylesheet" href="assets/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Boas Práticas para Repositórios Git</title>
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-   <div class="text_to_html">
-      <h3 class="text-2xl font-bold mt-1 text-text-100">Boas Práticas para Repositórios Git</h3>
+	<div class="text_to_html">
+		<h3 class="text-2xl font-bold mt-1 text-text-100">Boas Práticas para Repositórios Git</h3>
 
-      <h4 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">Padronização de Mensagens de Commit</h4>
-      <p class="whitespace-pre-wrap break-words">A padronização de mensagens de commit é fundamental para manter um
-         histórico claro e facilitar a revisão. O padrão <a href="https://www.conventionalcommits.org/en/v1.0.0/"
-            target="_blank" rel="noopener">Conventional Commits</a> é altamente recomendado:</p>
+		<h4 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">Padronização de Mensagens de Commit</h4>
+		<p class="whitespace-pre-wrap break-words">A padronização de mensagens de commit é fundamental para manter um
+			histórico claro e facilitar a revisão. O padrão <a href="https://www.conventionalcommits.org/en/v1.0.0/"
+				target="_blank" rel="noopener">Conventional Commits</a> é altamente recomendado:</p>
 
-      <pre class="language-javascript"><code>&lt;tipo&gt;[escopo opcional]: &lt;descrição&gt;
+		<pre class="language-javascript"><code>&lt;tipo&gt;[escopo opcional]: &lt;descrição&gt;
 
 [corpo opcional]
 
 [rodapé opcional]</code></pre>
 
-      <p class="whitespace-pre-wrap break-words">Os tipos mais comuns são:</p>
-      <ul class="list-disc space-y-1.5 pl-7">
-         <li class="whitespace-normal break-words"><code>feat</code>: nova funcionalidade</li>
-         <li class="whitespace-normal break-words"><code>fix</code>: correção de bug</li>
-         <li class="whitespace-normal break-words"><code>docs</code>: alterações em documentação</li>
-         <li class="whitespace-normal break-words"><code>style</code>: formatação de código</li>
-         <li class="whitespace-normal break-words"><code>refactor</code>: refatoração de código</li>
-         <li class="whitespace-normal break-words"><code>test</code>: adição/modificação de testes</li>
-         <li class="whitespace-normal break-words"><code>chore</code>: tarefas de manutenção</li>
-      </ul>
+		<p class="whitespace-pre-wrap break-words">Os tipos mais comuns são:</p>
+		<ul class="list-disc space-y-1.5 pl-7">
+			<li class="whitespace-normal break-words"><code>feat</code>: nova funcionalidade</li>
+			<li class="whitespace-normal break-words"><code>fix</code>: correção de bug</li>
+			<li class="whitespace-normal break-words"><code>docs</code>: alterações em documentação</li>
+			<li class="whitespace-normal break-words"><code>style</code>: formatação de código</li>
+			<li class="whitespace-normal break-words"><code>refactor</code>: refatoração de código</li>
+			<li class="whitespace-normal break-words"><code>test</code>: adição/modificação de testes</li>
+			<li class="whitespace-normal break-words"><code>chore</code>: tarefas de manutenção</li>
+		</ul>
 
-      <p class="whitespace-pre-wrap break-words">Exemplo: <code>feat(auth): implementa autenticação com JWT</code></p>
-      <p class="whitespace-pre-wrap break-words">Esta padronização facilita a geração automática de changelogs e <a
-            href="https://semver.org/">Semantic Versioning (SemVer)</a>.</p>
+		<p class="whitespace-pre-wrap break-words">Exemplo: <code>feat(auth): implementa autenticação com JWT</code></p>
+		<p class="whitespace-pre-wrap break-words">Esta padronização facilita a geração automática de changelogs e <a
+				href="https://semver.org/">Semantic Versioning (SemVer)</a>.</p>
 
-      <h4 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">Estrutura de Branches</h4>
-      <p class="whitespace-pre-wrap break-words">A escolha da estrutura de branches deve considerar o tamanho da equipe
-         e complexidade do projeto:</p>
+		<h4 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">Estrutura de Branches</h4>
+		<p class="whitespace-pre-wrap break-words">A escolha da estrutura de branches deve considerar o tamanho da equipe
+			e complexidade do projeto:</p>
 
-      <p><strong>Git Flow</strong>: Ideal para projetos com ciclos de release definidos, mantendo branches:</p>
-      <ul class="list-disc space-y-1.5 pl-7">
-         <li class="whitespace-normal break-words"><code>master/main</code>: código em produção</li>
-         <li class="whitespace-normal break-words"><code>develop/dev</code>: desenvolvimento contínuo</li>
-         <li class="whitespace-normal break-words"><code>feature/*</code>: novas funcionalidades</li>
-         <li class="whitespace-normal break-words"><code>release/*</code>: preparação para release</li>
-         <li class="whitespace-normal break-words"><code>hotfix/*</code>: correções urgentes</li>
-      </ul>
+		<p><strong>Git Flow</strong>: Ideal para projetos com ciclos de release definidos, mantendo branches:</p>
+		<ul class="list-disc space-y-1.5 pl-7">
+			<li class="whitespace-normal break-words"><code>master/main</code>: código em produção</li>
+			<li class="whitespace-normal break-words"><code>develop/dev</code>: desenvolvimento contínuo</li>
+			<li class="whitespace-normal break-words"><code>feature/*</code>: novas funcionalidades</li>
+			<li class="whitespace-normal break-words"><code>release/*</code>: preparação para release</li>
+			<li class="whitespace-normal break-words"><code>hotfix/*</code>: correções urgentes</li>
+		</ul>
 
-      <p><strong>GitHub Flow</strong>: Mais simples, adequado para deploy contínuo:</p>
-      <ul class="list-disc space-y-1.5 pl-7">
-         <li class="whitespace-normal break-words"><code>main</code>: sempre estável e pronto para deploy</li>
-         <li class="whitespace-normal break-words"><code>feature/*</code>: desenvolvimento de funcionalidades</li>
-      </ul>
+		<p><strong>GitHub Flow</strong>: Mais simples, adequado para deploy contínuo:</p>
+		<ul class="list-disc space-y-1.5 pl-7">
+			<li class="whitespace-normal break-words"><code>main</code>: sempre estável e pronto para deploy</li>
+			<li class="whitespace-normal break-words"><code>feature/*</code>: desenvolvimento de funcionalidades</li>
+		</ul>
 
-      <h4 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">Arquivos Essenciais</h4>
-      <p class="whitespace-pre-wrap break-words">Todo repositório profissional deve conter:</p>
+		<h4 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">Arquivos Essenciais</h4>
+		<p class="whitespace-pre-wrap break-words">Todo repositório profissional deve conter:</p>
 
-      <ol class="list-decimal space-y-1.5 pl-7">
-         <li class="whitespace-normal break-words" style="line-height: 1.5;">
-            <strong>README.md</strong>: Primeira impressão do projeto, contendo:
-            <ul class="list-disc space-y-1.5 pl-7">
-               <li class="whitespace-normal break-words">Descrição e propósito</li>
-               <li class="whitespace-normal break-words">Instruções de instalação</li>
-               <li class="whitespace-normal break-words">Como executar e testar</li>
-               <li class="whitespace-normal break-words">Exemplos de uso</li>
-               <li class="whitespace-normal break-words">Status do projeto</li>
-            </ul>
-         </li>
-         <li class="whitespace-normal break-words" style="line-height: 1.5;">
-            <strong>.gitignore</strong>: Evita commits de arquivos desnecessários como:
-            <ul class="list-disc space-y-1.5 pl-7">
-               <li class="whitespace-normal break-words">Arquivos de configuração local</li>
-               <li class="whitespace-normal break-words">Dependências instaladas</li>
-               <li class="whitespace-normal break-words">Arquivos compilados</li>
-               <li class="whitespace-normal break-words">Credenciais e segredos</li>
-            </ul>
-         </li>
-         <li class="whitespace-normal break-words" style="line-height: 1.5;">
-            <strong>.dockerignore</strong>: Semelhante ao .gitignore, mas para builds Docker:
-            <ul class="list-disc space-y-1.5 pl-7">
-               <li class="whitespace-normal break-words">Evita que arquivos desnecessários sejam incluídos na imagem
-                  Docker</li>
-               <li class="whitespace-normal break-words">Reduz o tamanho da imagem e melhora o tempo de build</li>
-               <li class="whitespace-normal break-words">Previne vazamento de dados sensíveis</li>
-            </ul>
-         </li>
-         <li class="whitespace-normal break-words" style="line-height: 1.5;">
-            <strong>CONTRIBUTING.md</strong>: Guia para contribuidores explicando:
-            <ul class="list-disc space-y-1.5 pl-7">
-               <li class="whitespace-normal break-words">Processo de submissão de PR</li>
-               <li class="whitespace-normal break-words">Padrões de código</li>
-               <li class="whitespace-normal break-words">Estrutura do projeto</li>
-               <li class="whitespace-normal break-words">Fluxo de trabalho</li>
-            </ul>
-         </li>
-         <li class="whitespace-normal break-words" style="line-height: 1.5;">
-            <strong>LICENSE</strong>: Define como o código pode ser usado e distribuído.
-         </li>
-      </ol>
-   </div>
+		<ol class="list-decimal space-y-1.5 pl-7">
+			<li class="whitespace-normal break-words" style="line-height: 1.5;">
+				<strong>README.md</strong>: Primeira impressão do projeto, contendo:
+				<ul class="list-disc space-y-1.5 pl-7">
+					<li class="whitespace-normal break-words">Descrição e propósito</li>
+					<li class="whitespace-normal break-words">Instruções de instalação</li>
+					<li class="whitespace-normal break-words">Como executar e testar</li>
+					<li class="whitespace-normal break-words">Exemplos de uso</li>
+					<li class="whitespace-normal break-words">Status do projeto</li>
+				</ul>
+			</li>
+			<li class="whitespace-normal break-words" style="line-height: 1.5;">
+				<strong>.gitignore</strong>: Evita commits de arquivos desnecessários como:
+				<ul class="list-disc space-y-1.5 pl-7">
+					<li class="whitespace-normal break-words">Arquivos de configuração local</li>
+					<li class="whitespace-normal break-words">Dependências instaladas</li>
+					<li class="whitespace-normal break-words">Arquivos compilados</li>
+					<li class="whitespace-normal break-words">Credenciais e segredos</li>
+				</ul>
+			</li>
+			<li class="whitespace-normal break-words" style="line-height: 1.5;">
+				<strong>.dockerignore</strong>: Semelhante ao .gitignore, mas para builds Docker:
+				<ul class="list-disc space-y-1.5 pl-7">
+					<li class="whitespace-normal break-words">Evita que arquivos desnecessários sejam incluídos na imagem
+						Docker</li>
+					<li class="whitespace-normal break-words">Reduz o tamanho da imagem e melhora o tempo de build</li>
+					<li class="whitespace-normal break-words">Previne vazamento de dados sensíveis</li>
+				</ul>
+			</li>
+			<li class="whitespace-normal break-words" style="line-height: 1.5;">
+				<strong>CONTRIBUTING.md</strong>: Guia para contribuidores explicando:
+				<ul class="list-disc space-y-1.5 pl-7">
+					<li class="whitespace-normal break-words">Processo de submissão de PR</li>
+					<li class="whitespace-normal break-words">Padrões de código</li>
+					<li class="whitespace-normal break-words">Estrutura do projeto</li>
+					<li class="whitespace-normal break-words">Fluxo de trabalho</li>
+				</ul>
+			</li>
+			<li class="whitespace-normal break-words" style="line-height: 1.5;">
+				<strong>LICENSE</strong>: Define como o código pode ser usado e distribuído.
+			</li>
+		</ol>
+	</div>
 </body>
 
 </html>
